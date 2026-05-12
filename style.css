@@ -85,6 +85,13 @@ a {
   color: var(--white);
 }
 
+footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+}
+
 @media (max-width: 860px) {
   .menu-btn {
     display: inline-flex;
