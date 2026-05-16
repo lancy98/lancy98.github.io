@@ -2,474 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Lancy Norbert Fernandes | iOS Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lancy Norbert Fernandes | iOS Engineer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <header>
-      <nav class="container nav">
-        <a href="#home" class="logo">Lancy<span>.</span></a>
-        <button class="menu-btn" id="menuBtn">Menu</button>
-        <ul class="nav-links" id="navLinks">
+    <nav id="desktop-nav">
+      <div class="logo">Lancy Fernandes</div>
+      <div>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <main>
-      <div class="container py-16 sm:py-24">
-        <section
-          id="about"
-          class="mx-auto max-w-5xl overflow-hidden rounded-lg border border-slate-700/70 shadow-2xl shadow-sky-950/30 backdrop-blur"
-        >
-          <div class="grid gap-8 p-6 sm:grid-cols-[180px_1fr] sm:p-8">
-            <div class="flex justify-center sm:justify-start">
-              <img
-                src="https://github.com/lancy98.png"
-                alt="Lancy Norbert Fernandes"
-                class="h-40 w-40 rounded-full border-4 border-sky-400/40 object-cover shadow-lg shadow-sky-950/30 backdrop-blur"
-              />
-            </div>
-            <div class="flex flex-col justify-center text-center sm:text-left">
-              <p class="text-sm font-semibold tracking-[0.18em] text-sky-300">
-                iOS Engineer
-              </p>
-              <h1 class="mt-2 text-3xl font-bold text-white sm:text-4xl">
-                Lancy Norbert Fernandes
-              </h1>
-              <p class="mt-4 text-base leading-7 text-slate-300">
-                iOS Developer with 13+ years of experience building scalable iOS
-                applications with Swift, Objective-C, SwiftUI, and UIKit,
-                focused on clean architecture and performance.
-              </p>
-              <div
-                class="mt-6 grid gap-3 text-sm font-medium text-slate-200 sm:grid-cols-2"
-              >
-                <a
-                  class="border rounded-md border-slate-700 px-4 py-3 transition hover:border-sky-300 hover:text-sky-200"
-                  href="mailto:lancy98@gmail.com"
-                  >lancy98@gmail.com</a
-                >
-                <a
-                  class="border rounded-md border-slate-700 px-4 py-3 transition hover:border-sky-300 hover:text-sky-200"
-                  href="https://www.linkedin.com/in/lancy-norbert-fernandes-8135bb86"
-                  target="_blank"
-                  rel="noreferrer"
-                  >LinkedIn Profile</a
-                >
-                <a
-                  class="border rounded-md border-slate-700 px-4 py-3 transition hover:border-sky-300 hover:text-sky-200"
-                  href="https://github.com/lancy98"
-                  target="_blank"
-                  rel="noreferrer"
-                  >Personal GitHub: lancy98</a
-                >
-                <a
-                  class="border rounded-md border-slate-700 px-4 py-3 transition hover:border-sky-300 hover:text-sky-200"
-                  href="https://github.com/lancy-mega"
-                  target="_blank"
-                  rel="noreferrer"
-                  >MEGA GitHub Contributions: lancy-mega</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="mt-6 flex justify-center">
-          <a
-            class="rounded-md bg-sky-500 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-sky-950/30 transition hover:bg-sky-400"
-            href="docs/Lancy_Norbert_Fernandes_CV.pdf"
-            download
-            >Download Resume</a
-          >
+    <nav id="hamburger-nav">
+      <div class="logo">Lancy Fernandes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <section id="skills" class="mt-20">
-          <h2 class="text-4xl font-bold text-white">Skills</h2>
-          <p class="mt-6 text-base text-slate-400">
-            Core technical areas and tools.
-          </p>
-
-          <div class="mt-9 flex flex-wrap gap-3">
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >iOS Development</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >SwiftUI</span
-            >
-
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Swift</span
-            >
-
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >UIKit</span
-            >
-
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Objective-C</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Objective-C++</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Mobile Platforms</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Jenkins</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Fastlane</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >CI/CD</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Agile Scrum</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Kanban</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Code Reviews</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Release Management</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Technical Leadership</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Clean Architecture</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >MVVM</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Modularization</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Dependency Injection</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Firebase</span
-            >
-            <span
-              class="rounded-full border border-sky-700/80 bg-sky-950/50 px-4 py-2 text-sm font-bold text-sky-100"
-              >Production Apps</span
-            >
-          </div>
-        </section>
-
-        <section id="experience" class="mt-20">
-          <h2 class="text-4xl font-bold text-white">Experience</h2>
-          <p class="mt-6 max-w-3xl text-base text-slate-400">
-            A career across mobile engineering, technical leadership, and
-            production software delivery.
-          </p>
-
-          <div class="mt-9 grid gap-5">
-            <article
-              class="rounded-lg border border-slate-700/70 bg-slate-900/60 p-6 shadow-xl shadow-sky-950/20"
-            >
-              <div
-                class="flex flex-col gap-3 border-b border-slate-700/70 pb-5 sm:flex-row sm:items-start sm:justify-between"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold text-white">
-                    MEGA The Privacy Company
-                  </h3>
-                  <p class="mt-2 text-sm font-medium text-slate-300">
-                    Full-time • 6 yrs 8 mos • Auckland, New Zealand / Remote
-                    India
-                  </p>
-                </div>
-                <p
-                  class="w-fit rounded-full border border-sky-700/80 bg-sky-950/50 px-3 py-1 text-sm font-bold text-sky-100"
-                >
-                  Aug 2019 — Mar 2026
-                </p>
-              </div>
-
-              <div class="mt-6 gap-4 grid grid-cols-1">
-                <div
-                  class="rounded-lg border border-slate-700/70 bg-slate-950/40 p-5"
-                >
-                  <h4 class="text-lg font-bold text-white">
-                    Staff iOS Engineer (Contract)
-                  </h4>
-                  <p class="mt-2 text-sm font-medium text-slate-400">
-                    Nov 2025 – Mar 2026 • Remote, India
-                  </p>
-                  <div
-                    class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-900/70 px-5 py-4"
-                  >
-                    <ul
-                      class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                    >
-                      <li>
-                        Continued ownership of Cloud Drive and led the revamp of
-                        Home module migration to Clean Architecture.
-                      </li>
-                      <li>
-                        Reduced CI pipeline execution time, enabling faster
-                        validation cycles and improving engineering velocity.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="rounded-lg border border-slate-700/70 bg-slate-950/40 p-5"
-                >
-                  <h4 class="text-lg font-bold text-white">
-                    Staff iOS Engineer
-                  </h4>
-                  <p class="mt-2 text-sm font-medium text-slate-400">
-                    Jul 2022 – Nov 2025 • Auckland, New Zealand
-                  </p>
-                  <div
-                    class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-900/70 px-5 py-4"
-                  >
-                    <ul
-                      class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                    >
-                      <li>
-                        Developing and maintaining MEGA iOS app using Swift,
-                        SwiftUI, UIKit, and Objective-C.
-                      </li>
-                      <li>
-                        Led the revamp of the Cloud Drive and Home modules,
-                        migrating legacy implementations to Clean Architecture.
-                      </li>
-                      <li>
-                        Led implementation of CI/CD automation using Jenkins and
-                        Fastlane, standardizing build, code signing, and release
-                        pipelines.
-                      </li>
-                      <li>Leading the Meeting & Chat module.</li>
-                      <li>Working in Agile Scrum and Kanban delivery model.</li>
-                      <li>Code reviews and production feature delivery.</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="rounded-lg border border-slate-700/70 bg-slate-950/40 p-5"
-                >
-                  <h4 class="text-lg font-bold text-white">Senior Engineer</h4>
-                  <p class="mt-2 text-sm font-medium text-slate-400">
-                    Aug 2021 – Jun 2022 • Auckland, New Zealand
-                  </p>
-                  <div
-                    class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-900/70 px-5 py-4"
-                  >
-                    <ul
-                      class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                    >
-                      <li>
-                        Developing and maintaining MEGA iOS app using Swift,
-                        SwiftUI, UIKit, and Objective-C.
-                      </li>
-                      <li>Working in Agile Scrum and Kanban delivery model.</li>
-                      <li>Code reviews and production feature delivery.</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="rounded-lg border border-slate-700/70 bg-slate-950/40 p-5"
-                >
-                  <h4 class="text-lg font-bold text-white">
-                    Software Developer
-                  </h4>
-                  <p class="mt-2 text-sm font-medium text-slate-400">
-                    Aug 2019 – Jul 2021 • Auckland, New Zealand
-                  </p>
-                  <div
-                    class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-900/70 px-5 py-4"
-                  >
-                    <ul
-                      class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                    >
-                      <li>
-                        Developing and maintaining MEGA iOS app using Swift,
-                        SwiftUI, UIKit, and Objective-C.
-                      </li>
-                      <li>Working in Agile Scrum and Kanban delivery model.</li>
-                      <li>Code reviews and production feature delivery.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article
-              class="rounded-lg border border-slate-700/70 bg-slate-900/60 p-6 shadow-xl shadow-sky-950/20"
-            >
-              <div
-                class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold text-white">Technical Lead</h3>
-                  <p class="mt-2 text-sm font-medium text-slate-300">
-                    Honeywell Technology Solutions • India
-                  </p>
-                </div>
-                <p
-                  class="w-fit rounded-full border border-sky-700/80 bg-sky-950/50 px-3 py-1 text-sm font-bold text-sky-100"
-                >
-                  Dec 2016 — Jul 2018
-                </p>
-              </div>
-              <div
-                class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-950/45 px-5 py-4"
-              >
-                <ul
-                  class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                >
-                  <li>Led 5-member iOS team.</li>
-                  <li>Development using Swift, UIKit, and Objective-C.</li>
-                  <li>Production releases and feature ownership.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article
-              class="rounded-lg border border-slate-700/70 bg-slate-900/60 p-6 shadow-xl shadow-sky-950/20"
-            >
-              <div
-                class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold text-white">
-                    Senior Software Development Engineer
-                  </h3>
-                  <p class="mt-2 text-sm font-medium text-slate-300">
-                    McAfee • India
-                  </p>
-                </div>
-                <p
-                  class="w-fit rounded-full border border-sky-700/80 bg-sky-950/50 px-3 py-1 text-sm font-bold text-sky-100"
-                >
-                  Nov 2015 — Dec 2016
-                </p>
-              </div>
-              <div
-                class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-950/45 px-5 py-4"
-              >
-                <ul
-                  class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                >
-                  <li>Led 3-member iOS team.</li>
-                  <li>Development using Swift, UIKit, and Objective-C.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article
-              class="rounded-lg border border-slate-700/70 bg-slate-900/60 p-6 shadow-xl shadow-sky-950/20"
-            >
-              <div
-                class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold text-white">Module Lead</h3>
-                  <p class="mt-2 text-sm font-medium text-slate-300">
-                    Happiest Minds Technologies • India
-                  </p>
-                </div>
-                <p
-                  class="w-fit rounded-full border border-sky-700/80 bg-sky-950/50 px-3 py-1 text-sm font-bold text-sky-100"
-                >
-                  Jan 2014 — Nov 2015
-                </p>
-              </div>
-              <div
-                class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-950/45 px-5 py-4"
-              >
-                <ul
-                  class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                >
-                  <li>Development using Swift, UIKit, and Objective-C.</li>
-                  <li>Delivered ESPN CricInfo iOS application.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article
-              class="rounded-lg border border-slate-700/70 bg-slate-900/60 p-6 shadow-xl shadow-sky-950/20"
-            >
-              <div
-                class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold text-white">
-                    Software Engineer
-                  </h3>
-                  <p class="mt-2 text-sm font-medium text-slate-300">
-                    Robosoft Technologies • India
-                  </p>
-                </div>
-                <p
-                  class="w-fit rounded-full border border-sky-700/80 bg-sky-950/50 px-3 py-1 text-sm font-bold text-sky-100"
-                >
-                  May 2011 — Dec 2013
-                </p>
-              </div>
-              <div
-                class="mt-5 rounded-lg border-l-2 border-sky-400 bg-slate-950/45 px-5 py-4"
-              >
-                <ul
-                  class="ml-4 list-disc space-y-2 text-sm leading-6 text-slate-300 marker:text-sky-300"
-                >
-                  <li>Development using Objective-C and UIKit.</li>
-                  <li>
-                    Worked on award-winning apps including WWF Together (Apple
-                    Design Award winner).
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </section>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-    </main>
+    </nav>
 
-    <footer>
-      <div class="container">
-        <p>
-          © <span id="year"></span> Lancy Norbert Fernandes. All rights
-          reserved.
-        </p>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="https://github.com/lancy98.png"
+          alt="Lancy Norbert Fernandes"
+        />
       </div>
-    </footer>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lancy Norbert Fernandes</h1>
+        <p class="section__text__p2">iOS Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./docs/Lancy_Norbert_Fernandes_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/lancy-norbert-fernandes-8135bb86/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/lancy98'"
+          />
+        </div>
+      </div>
+    </section>
 
     <script src="index.js"></script>
   </body>

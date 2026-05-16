@@ -1,9 +1,7 @@
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
-const year = document.getElementById("year");
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
 
-year.textContent = new Date().getFullYear();
-
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
