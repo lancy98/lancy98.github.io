@@ -362,3 +362,45 @@ article {
 article .icon {
   cursor: default;
 }
+
+/* MY PROJECTS */
+#projects {
+  position: relative;
+}
+
+/* CONTACT ME */
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 2rem;
+  border-color: rgb(163, 163, 163);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
