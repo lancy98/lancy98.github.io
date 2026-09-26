@@ -6,4 +6,18 @@
   #hamburger-nav {
     display: flex;
   }
+
+  #projects {
+    height: auto;
+    min-height: 96vh;
+    margin: 0 2rem;
+  }
+
+  .projects-details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
 }

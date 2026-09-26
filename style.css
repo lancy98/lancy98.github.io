@@ -368,6 +368,87 @@ article .icon {
   position: relative;
 }
 
+.projects-details-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  min-height: 22rem;
+  padding: 1.75rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 2rem;
+  background: white;
+}
+
+.project-card__icon {
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-bottom: 1.25rem;
+  object-fit: contain;
+}
+
+.project-card__icon--grammarfixai {
+  width: 6.875rem;
+  height: 6.875rem;
+  margin: -0.6875rem -0.6875rem 0.5625rem;
+}
+
+.project-card__eyebrow {
+  margin-bottom: 0.5rem;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-title {
+  margin-bottom: 1rem;
+  color: rgb(53, 53, 53);
+  font-size: 1.6rem;
+}
+
+.project-card__note {
+  margin-top: 1rem;
+  color: rgb(120, 120, 120);
+  font-size: 0.9rem;
+}
+
+.project-card__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card__actions .btn {
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.project-link,
+.all-projects-link {
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+}
+
+.all-projects-link {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 /* CONTACT ME */
 #contact {
   display: flex;
@@ -395,7 +476,6 @@ article .icon {
 }
 
 /* FOOTER */
-
 footer {
   height: 26vh;
   margin: 0 1rem;
