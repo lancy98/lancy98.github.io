@@ -314,6 +314,8 @@ section {
 /* Experience SECTION */
 #experience {
   position: relative;
+  height: auto;
+  min-height: 96vh;
 }
 
 .experience-containers {
@@ -334,6 +336,14 @@ section {
 .experience-duration {
   color: rgb(163, 163, 163);
   font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.experience-duration--with-location {
+  margin-bottom: 0.25rem;
+}
+
+.experience-location {
   margin-bottom: 2rem;
 }
 
